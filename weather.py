@@ -12,7 +12,7 @@ headers = {
 r = requests.get("https://community-open-weather-map.p.rapidapi.com/weather?q="+city+"%2Cpl&lang=pl&units=%22metric%22%20", headers=headers)
 tasks = r.json()
 
-temp = 300 - int (tasks['main']['temp'])
+temp = 273 - int (tasks['main']['temp'])
 pressure = tasks['main']['pressure']
 
 r = requests.get("https://type.fit/api/quotes?fbclid=IwAR0IdRKLDMkEvZc8UrEFpZm6EzvoaTrVRrAAtPRgBjawN78GciLamB7l_DA")
