@@ -28,7 +28,7 @@ def get_point(addres):
     queryString = {"address": addres}
     # print(querystring)
     headers = {
-        'x-rapidapi-key': "7ad25462ecmshfc519d0047cbca9p1ea5f5jsnc13500c50fef",
+        'x-rapidapi-key': "your key",
         'x-rapidapi-host': "trueway-geocoding.p.rapidapi.com"
     }
     response = requests.request(
